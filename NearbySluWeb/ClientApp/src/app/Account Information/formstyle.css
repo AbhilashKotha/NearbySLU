@@ -1,0 +1,274 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.pdetails{
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid black;
+}
+
+:root {
+  --color-primary: #00A5B4;
+  --color-primary-darker: #0f7d87;
+  --color-secondary: #C9DC08;
+  --color-secondary-darker: #acbc04;
+  --color-primary-text: #3f465e;
+  --color-border: #e1e3ea;
+  --color-border-input: #e5e5e5;
+  --color-red: #e41919;
+  --color-black: #000;
+  --color-orange: #f47631;
+  --color-yellow: #ffce02;
+  --color-cyan: #27c5c3;
+  --color-blue: #43a5de;
+  --color-green: #65B044;
+  --color-facebook: #3F5C99;
+  --color-twitter: #1DA0F2;
+  --color-google: #DC4A38;
+  --color-instagram: #A4785B;
+  --color-gray-100: #F7FAFC;
+  --color-gray-200: #EDF2F7;
+  --color-gray-300: #E2E8F0;
+  --color-gray-400: #CBD5E0;
+  --color-gray-500: #A0AEC0;
+  --color-gray-600: #718096;
+  --color-gray-700: #4A5568;
+  --color-gray-800: #2D3748;
+  --color-gray-900: #1A202C;
+} 
+
+.link {
+  color: var(--color-link);
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.link:hover, .link:focus, .link:active {
+  color: var(--color-primary);
+}
+
+.paragraph {
+  line-height: 1.6;
+}
+
+:root {
+  --color-primary: #00A5B4;
+  --color-secondary: #C9DC08;
+  --color-gray-100: #F7FAFC;
+  --color-primary-text: #333;
+  --color-gray-400: #CBD5E0;
+  --color-red: #e41919;
+  --color-border: #e1e3ea;
+  --breakpoint-xs: 600px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-row .required {
+  color: var(--color-red);
+  border-bottom: none;
+}
+.form-row .button[type="%23fff"] {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form-row .button[type="%23fff"]:hover, .form-row .button[type="%23fff"]:focus, .form-row .button[type="%23fff"]:active {
+  background-color: var(--color-primary-darker);
+  border-color: var(--color-primary-darker);
+}
+
+.input-text {
+  border: 1px solid var(--color-border-input);
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.input-text:focus, .input-text:active {
+  border-color: var(--color-primary);
+  outline: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.App-account.logged-in {
+  background: var(--gray);
+}
+.App-account.logged-in fieldset {
+  border: none;
+  background: var(--gray);
+  padding: 40px;
+  margin-bottom: 40px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.App-account.logged-in legend {
+  background: var(--gray);
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+.App-account.logged-in .App {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
+@media (max-width: 768px) {
+  .App-account.logged-in .App {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .App-account.logged-in .App {
+    flex-direction: column;
+  }
+}
+.App-account.logged-in .App-MyAccount-nav {
+  flex-basis: 255px;
+  min-width: 255px;
+}
+@media (max-width: 600px) {
+  .App-account.logged-in .App-MyAccount-nav {
+    display: block;
+    flex-basis: 0;
+    min-width: 0;
+  }
+}
+.App-account.logged-in .App-MyAccount-nav ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .App-account.logged-in .App-MyAccount-nav ul {
+    display: flex;
+    overflow-x: auto;
+  }
+}
+.App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link {
+  list-style: none;
+  padding: 0 20px;
+}
+.App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link:last-child {
+  border-bottom: none;
+}
+.App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link.is-active a {
+  color: var(--color-primary);
+}
+.App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link a {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: var(--color-primary-text);
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link a {
+    white-space: nowrap;
+  }
+}
+.App-account.logged-in .App-MyAccount-nav .App-MyAccount-nav-link a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.App-account.logged-in .App-MyAccount-content {
+  flex-grow: 1;
+  border-radius: 3px;
+  padding: 30px;
+}
+.App-account.logged-in .App-MyAccount-content p {
+  margin-bottom: 15px;
+}
+.App-account.logged-in .App-MyAccount-content > p:first-child {
+  font-size: 2.7rem;
+}
+.App-account.logged-in .App-MyAccount-content > p:nth-child(2) {
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 50px;
+}
+.App-account.logged-in .App-Button[type=submit] {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.App-account.logged-in .App-Button[type=submit]:hover, .App-account.logged-in .App-Button[type=submit]:focus, .App-account.logged-in .App-Button[type=submit]:active {
+  background-color: var(--color-primary-darker);
+  border-color: var(--color-primary-darker);
+}
+.App-account.logged-in form {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.App-form-row .input-text {
+  margin-bottom: 7px;
+  margin-top: 3px;
+}
+.App-form-row span em {
+  font-size: 12px;
+}
