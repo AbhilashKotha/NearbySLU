@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using NearbySluWeb.Data;
 using NearbySluWeb.Models;
+using Microsoft.AspNetCore.SpaServices.AngularCli;
 
 namespace NearbySluWeb
 {
@@ -36,8 +37,24 @@ namespace NearbySluWeb
                 .AddIdentityServerJwt();
 
             builder.Services.AddControllersWithViews();
+
+
+            // TryingDocker
+
+            builder.Services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientApp/dist";
+            });
+
+
+            //Docker end
+
+
+
+
             builder.Services.AddRazorPages();
 
+          
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

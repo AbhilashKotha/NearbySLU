@@ -23,7 +23,7 @@ import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddf
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    FormsModule,
+   /* FormsModule,*/
     NewplacaddComponent,
     NewplacaddformComponent
   ],
