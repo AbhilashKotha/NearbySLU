@@ -17,6 +17,8 @@ jobs:
       - run:
           name: current directory
           command: pwd
+      - run:
+          name: list directory
           command: ls
           
           
