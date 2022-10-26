@@ -3,7 +3,7 @@ orbs:
   browser-tools: circleci/browser-tools@1.2.3
 jobs:
   build:
-    working_directory: ~/src/NearbySluWeb/ClientApp
+    
     docker:
       - image: cimg/node:16.13.1-browsers
     steps:
@@ -15,5 +15,6 @@ jobs:
             chromedriver --version
           name: Check install
       - checkout
-      - run: npm install
-      - run: npm run test
+      
+      - run: cd ClientApp && npm install
+      - run: cd ClientApp && npm run test
