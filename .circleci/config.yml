@@ -15,6 +15,9 @@ jobs:
           name: Check install
       - checkout
       - run:
+          name: current directory
+          command: pwd
+      - run:
           command: |
             cd /NearbySLU/NearbySluWeb/ClientApp && npm install
       - run:
