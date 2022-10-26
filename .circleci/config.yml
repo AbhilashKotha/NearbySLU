@@ -16,5 +16,7 @@ jobs:
           name: Check install
       - checkout
       
-      - run: cd ClientApp && npm install
-      - run: cd ClientApp && npm run test
+      - run: 
+      Command: cd ClientApp && npm install
+      - run: 
+      Command: cd ClientApp && npm run test
