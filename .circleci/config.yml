@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           command: |
-            cd NearbySLU/NearbySluWeb/ClientApp && npm install
+            cd /NearbySLU/NearbySluWeb/ClientApp && npm install
       - run:
           command: |
-            cd NearbySLU/NearbySluWeb/ClientApp && npm run test
+            cd /NearbySLU/NearbySluWeb/ClientApp && npm run test
