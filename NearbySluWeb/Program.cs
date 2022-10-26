@@ -27,6 +27,8 @@ namespace NearbySluWeb
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+            builder.Services.AddCors();
+
             builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -41,10 +43,10 @@ namespace NearbySluWeb
 
             // TryingDocker
 
-            builder.Services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/dist";
-            });
+            //builder.Services.AddSpaStaticFiles(configuration =>
+            //{
+            //    configuration.RootPath = "ClientApp/dist";
+            //});
 
 
             //Docker end
@@ -58,6 +60,11 @@ namespace NearbySluWeb
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
+            app.UseCors(options =>
+            options.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
@@ -67,7 +74,7 @@ namespace NearbySluWeb
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
