@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    
+    <table class="table table-bordered border-primary">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Location</th>
+          <th scope="col">Navigate</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <th scope="row"><a href="Forest Park.html" >Forest Park</a></th>
+          <td>5595 Grand Drive in Forest Park | St. Louis MO 63112</td>
+          <td><a href="https://www.google.com" > Maps </a></td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="Gate Way Arch.html" >Gate Way Arch</a></th>
+          <td> Gateway Arch, St. Louis, MO 63102 </td>
+          <td><a href="https://www.google.com" >Maps</a></td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="SSN office" >SSN Office</a></th>
+          <td> 6401 Security Blvd. Baltimore, MD 21235 </td>
+          <td ><a href="https://www.google.com" >Maps</a></td>
+        </tr>
+         <tr>
+          <th scope="row"><a href="Down town.html" >Down town</a></th>
+          <td>Chouteau Ave Saint Louis, MO 63103</td>
+          <td ><a href="https://www.google.com" >Maps</a></td>
+        </tr>
+	   <tr>
+          <th scope="row"><a href="Union Station.html" >Union Station</a></th>
+          <td>1820 Market Street, St. Louis, MO 6310</td>
+          <td ><a href="https://www.google.com" >Maps</a></td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>
