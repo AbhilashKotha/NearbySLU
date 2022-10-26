@@ -15,4 +15,5 @@ jobs:
             chromedriver --version
           name: Check install
       - checkout
+      - run: npm install
       - run: npm run test
