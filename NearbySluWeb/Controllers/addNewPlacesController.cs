@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NearbySluWeb.Models;
-
 namespace NearbySluWeb.Controllers
 {
     [Route("api/[controller]")]
