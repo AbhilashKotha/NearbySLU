@@ -5,6 +5,8 @@ C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertes
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\spa.proxy.json
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\appsettings.json
+C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\package-lock.json
+C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\package.json
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\NearbySluWeb.staticwebassets.runtime.json
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\NearbySluWeb.exe
 C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\testhost.exe

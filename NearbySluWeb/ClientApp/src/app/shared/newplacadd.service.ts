@@ -11,6 +11,7 @@ export class NewplacaddService {
   constructor(private http: HttpClient) { }
  
   formData: Newplacadd = new Newplacadd();
+  list: Newplacadd[] = [];
   //list: Newplacadd[];
   readonly baseURL = 'https://localhost:7169/api/addNewPlaces'
 
@@ -23,11 +24,11 @@ export class NewplacaddService {
     return this.http.put(`${this.baseURL}/${this.formData.placeId}`, this.formData);
   }
 
-  //refreshList() {
-  //  this.http.get(this.baseURL)
-  //    .toPromise()
-  //    .then(res => this.list = res as Newplacadd[]);
-  //}
+  refreshList() {
+    this.http.get(this.baseURL)
+      .toPromise()
+      .then(res => this.list = res as Newplacadd[]);
+  }
 
   //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
   //  http.get<Newplacadd[]>(baseUrl + 'addNewPlaces').subscribe(result => {

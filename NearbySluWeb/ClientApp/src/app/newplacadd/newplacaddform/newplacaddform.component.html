@@ -1,34 +1,40 @@
 <form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
-    <input type="hidden" name="placeId" [value]="service.formData.placeId" />
-    <div class="form-group">
-      <label>Place Name</label>
-      <input class="form-control form-control-lg" placeholder="Full Name" name="placeName"
-             #cardOwnerName="ngModel" [(ngModel)]="service.formData.placeName">
+  <input type="hidden" name="placeId" [value]="service.formData.placeId" />
+  <div class="form-group">
+    <label>Place Name</label>
+    <input class="form-control form-control-lg" placeholder="Full Name" name="placeName"
+           #cardOwnerName="ngModel" [(ngModel)]="service.formData.placeName">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input class="form-control form-control-lg" placeholder="Short Description" name="description"
+           #cardNumber="ngModel" [(ngModel)]="service.formData.description">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Category</label>
+      <input class="form-control form-control-lg" placeholder="Category" name="category"
+             #cardNumber="ngModel" [(ngModel)]="service.formData.category">
     </div>
-    <div class="form-group">
-      <label>Description</label>
-      <input class="form-control form-control-lg" placeholder="Short Description" name="description"
-             #cardNumber="ngModel" [(ngModel)]="service.formData.description">
+    <div class="form-group col-md-6">
+      <label>Distance from SLU</label>
+      <input class="form-control form-control-lg" placeholder="Distance in Miles" name="distance"
+             #cardNumber="ngModel" [(ngModel)]="service.formData.distance">
     </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label>Category</label>
-        <input class="form-control form-control-lg" placeholder="Category" name="category"
-               #cardNumber="ngModel" [(ngModel)]="service.formData.category">
-      </div>
-      <div class="form-group col-md-6">
-        <label>Distance from SLU</label>
-        <input class="form-control form-control-lg" placeholder="Distance in Miles" name="distance"
-               #cardNumber="ngModel" [(ngModel)]="service.formData.distance">
-      </div>
-    </div>
-    <p>
+  </div>
+  <p>
 
-    </p>
-    <div class="form-group">
-      <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
-    </div>
-  </form>
+  </p>
+  <div class="form-group">
+    <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+  </div>
+  <p>
+
+  </p>
+  <div style="border: solid; border-color: forestgreen; fill: chartreuse;border-radius:8px;vertical-align:central" *ngIf="isNewPlacePosted">
+    <p style="color:darkolivegreen;font-size:15px;font-weight:bold">Success!</p>
+  </div>
+</form>
 
 
   <!--(submit)="onSubmit(form)-->
