@@ -16,9 +16,13 @@ export class NewplacaddformComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
+    
     this.service.postNewplaceData().subscribe(
-      res => { },
+      res => {
+        form.reset()
+      },
       err => { console.log(err) }
     );
+    
   }
 }
