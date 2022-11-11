@@ -12,22 +12,27 @@ import { Newplacadd } from '../../shared/newplacadd.model';
 })
 export class NewplacaddformComponent implements OnInit {
 
-  constructor(public service: NewplacaddService ) { }
+  constructor(public service: NewplacaddService) { }
   isNewPlacePosted = false;
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
-    
+    if (this.service.formData.placeId == 0)
+      this.insertRecord(form);
+  }
+
+  insertRecord(form: NgForm) {
     this.service.postNewplaceData().subscribe(
       res => {
-        form.reset()
-        this.isNewPlacePosted = true;
+        this.resetForm(form);
+        this.service.refreshList();
         setTimeout(() => { this.isNewPlacePosted = false; }, 1000);
       },
-      err => { console.log(err) }
+      err => { console.log(err); }
     );
-    
   }
+
+
   resetForm(form: NgForm) {
     form.form.reset();
     this.service.formData = new Newplacadd();

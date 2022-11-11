@@ -11,10 +11,18 @@ import { NewplacaddService } from '../shared/newplacadd.service';
 export class NewplacaddComponent implements OnInit {
 
   constructor(public service: NewplacaddService) { }
+  
 
   ngOnInit(): void {
     this.service.refreshList();
 
   }
+
+  populateForm(selectedRecord: Newplacadd) {
+    this.service.formData = Object.assign({}, selectedRecord);
+  }
+
+ 
+
 
 }

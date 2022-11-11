@@ -20,9 +20,9 @@ export class NewplacaddService {
     return this.http.post(this.baseURL, this.formData);
 
   }
-  putNewplaceData() {
-    return this.http.put(`${this.baseURL}/${this.formData.placeId}`, this.formData);
-  }
+ 
+
+  
 
   refreshList() {
     this.http.get(this.baseURL)
