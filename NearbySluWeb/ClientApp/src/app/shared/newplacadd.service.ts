@@ -21,6 +21,10 @@ export class NewplacaddService {
 
   }
 
+  putNewplaceData() {
+    return this.http.put(`${this.baseURL}/${this.formData.placeId}`, this.formData);
+  }
+
   deleteNewplaceData(id: number) {
     return this.http.delete(`${this.baseURL}/${id}`);
   }

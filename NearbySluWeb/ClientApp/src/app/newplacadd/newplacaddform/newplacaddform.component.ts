@@ -19,10 +19,23 @@ export class NewplacaddformComponent implements OnInit {
   onSubmit(form: NgForm) {
     if (this.service.formData.placeId == 0)
       this.insertRecord(form);
+    else
+      this.updateRecord(form);
   }
 
   insertRecord(form: NgForm) {
     this.service.postNewplaceData().subscribe(
+      res => {
+        this.resetForm(form);
+        this.service.refreshList();
+        setTimeout(() => { this.isNewPlacePosted = false; }, 1000);
+      },
+      err => { console.log(err); }
+    );
+  }
+
+  updateRecord(form: NgForm) {
+    this.service.putNewplaceData().subscribe(
       res => {
         this.resetForm(form);
         this.service.refreshList();
