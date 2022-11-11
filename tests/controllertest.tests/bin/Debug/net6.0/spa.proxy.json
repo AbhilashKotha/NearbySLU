@@ -2,7 +2,7 @@
 "SpaProxyServer": {
 "ServerUrl": "https://localhost:44456",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\NearbySluWeb\\ClientApp\\",
+"WorkingDirectory": "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\NearbySluWeb\\ClientApp\\",
 "MaxTimeoutInSeconds": "120"
 }
 }

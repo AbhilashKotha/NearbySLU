@@ -23,6 +23,9 @@ namespace NearbySluWeb
             builder.Services.AddDbContext<addNewPlaceContext>(options =>
             options.UseSqlServer(connectionString));
 
+            builder.Services.AddDbContext<CategoryListContext>(options =>
+           options.UseSqlServer(connectionString));
+
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
