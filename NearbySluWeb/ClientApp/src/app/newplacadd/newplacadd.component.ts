@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Newplacadd } from '../shared/newplacadd.model';
+import { NewplacaddService } from '../shared/newplacadd.service';
 
 @Component({
   selector: 'app-newplacadd',
@@ -8,9 +10,11 @@ import { RouterModule } from '@angular/router';
 })
 export class NewplacaddComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: NewplacaddService) { }
 
   ngOnInit(): void {
+    this.service.refreshList();
+
   }
 
 }
