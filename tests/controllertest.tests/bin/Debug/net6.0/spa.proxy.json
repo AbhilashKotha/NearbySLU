@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44456",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\eswar\\OneDrive\\Desktop\\PSD Sprint 3 New\\NearbySluWeb\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}

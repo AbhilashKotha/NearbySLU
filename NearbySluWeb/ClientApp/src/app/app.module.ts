@@ -15,7 +15,6 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { NewplacaddComponent } from './newplacadd/newplacadd.component';
 import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddform.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +35,8 @@ import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddf
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
-      { path: 'add-new-place', component: NewplacaddComponent, canActivate: [AuthorizeGuard] },
+      //{ path: 'add-new-place', component: NewplacaddComponent, canActivate: [AuthorizeGuard] },
+      { path: 'add-new-place', component: NewplacaddComponent},
     ])
   ],
   providers: [
