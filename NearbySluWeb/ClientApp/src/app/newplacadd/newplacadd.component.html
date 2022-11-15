@@ -16,6 +16,7 @@
           <th>Description</th>
           <th>Category</th>
           <th>Distance</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -24,7 +25,7 @@
           <td (click)="populateForm(pd)">{{pd.description}}</td>
           <td (click)="populateForm(pd)">{{pd.category}}</td>
           <td (click)="populateForm(pd)">{{pd.distance}}</td>
-          <td>
+          <td align="center">
             <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.placeId)"></i>
           </td>
         </tr>
