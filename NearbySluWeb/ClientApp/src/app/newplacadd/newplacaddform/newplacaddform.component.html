@@ -3,23 +3,37 @@
   <div class="form-group">
     <label>Place Name</label>
     <input class="form-control form-control-lg" placeholder="Full Name" name="placeName"
-           #cardOwnerName="ngModel" [(ngModel)]="service.formData.placeName">
+           #placeName="ngModel" [(ngModel)]="service.formData.placeName" required [class.invalid]="placeName.invalid && placeName.touched">
   </div>
   <div class="form-group">
     <label>Description</label>
-    <input class="form-control form-control-lg" placeholder="Short Description" name="description"
-           #cardNumber="ngModel" [(ngModel)]="service.formData.description">
+    <textarea class="form-control form-control-lg"  maxlength="100"  placeholder="Short Description" name="description"
+              #description="ngModel" [(ngModel)]="service.formData.description" type=""></textarea>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
       <label>Category</label>
-      <input class="form-control form-control-lg" placeholder="Category" name="category"
-             #cardNumber="ngModel" [(ngModel)]="service.formData.category">
+      <select class="form-control form-control-lg" id="selector" name="category" #category="ngModel" [(ngModel)]="service.formData.category">
+        <option value="Shopping">Shopping</option>
+        <option value="COMPANIES">COMPANIES</option>
+        <option value="grocery">grocery</option>
+        <option value="OFFICES">OFFICES</option>
+        <option value="SCHOOLS">SCHOOLS</option>
+        <option value="TRANSPORT">TRANSPORT</option>
+        <option value="ATTRACTIONS">ATTRACTIONS</option>
+        <option value="HOSPITALS">HOSPITALS</option>
+        <option value="RESTAURANTS">RESTAURANTS</option>
+        <option value="BANKS">BANKS</option>
+        <option value="EVENTS">EVENTS</option>
+
+      </select>
+      <!--<input class="form-control form-control-lg" placeholder="Category" name="category"
+             #category="ngModel" [(ngModel)]="service.formData.category">-->
     </div>
     <div class="form-group col-md-6">
-      <label>Distance from SLU</label>
+      <label>Distance from SLU (in miles)</label>
       <input class="form-control form-control-lg" placeholder="Distance in Miles" name="distance"
-             #cardNumber="ngModel" [(ngModel)]="service.formData.distance">
+             #distance="ngModel" [(ngModel)]="service.formData.distance" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
     </div>
   </div>
   <p>

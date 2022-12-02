@@ -28,8 +28,6 @@ export class NewplacaddService {
   deleteNewplaceData(id: number) {
     return this.http.delete(`${this.baseURL}/${id}`);
   }
- 
-
   
 
   refreshList() {
@@ -38,32 +36,10 @@ export class NewplacaddService {
       .then(res => this.list = res as Newplacadd[]);
   }
 
-  //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-  //  http.get<Newplacadd[]>(baseUrl + 'addNewPlaces').subscribe(result => {
-  //   this.places = result;
-  //  }, error => console.error(error));
+  refreshFilteredList(cat:string) {
+    this.http.get(this.baseURL)
+      .toPromise()
+      .then(res => this.list = (res as Newplacadd[]).filter(item => item.category === cat));
+  }
 
-    
-
-  //  }
-
-
-  //constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) { }
-
-    //PutaddNewPlace() {
-    //  return this.http.post(this.baseURL, this.formData);
-    //}
-    //putPaymentDetail() {
-    //  return this.http.put(`${this.baseURL}/${this.formData.placeId}`, this.formData);
-    //}
-    //deletePaymentDetail(id: number) {
-    //  return this.http.delete(`${this.baseURL}/${id}`);
-    //}
-  
-
-  //refreshList() {
-  //  this.http.get(this.baseURL)
-  //    .toPromise()
-  //    .then(res => this.list = res as Newplacadd[]);
-  /*}*/
 }
