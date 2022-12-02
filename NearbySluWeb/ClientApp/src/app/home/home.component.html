@@ -7,6 +7,7 @@
 <div>
 </div>
 <div>
+  <!--body component containing all categories-->
   <div id="shopping" class="catog" (click)="onCatClick('Shopping')" title="Click here to know about the nearest shopping malls">
     <div id="content">
       <img src="../../assets/3081415.png" class="ribbon" alt="" />
@@ -100,6 +101,7 @@
         <th>Distance in Miles</th>
       </tr>
     </thead>
+    <!--This is the database link to the home component-->
     <tbody>
       <tr *ngFor="let pd of service.list">
         <td>{{pd.placeName}}</td>
@@ -117,7 +119,7 @@
     <button type="submit" class="btn btn-primary btn-md" id="btndisclaimer">Add a new place</button>
   </div>
 </div>-->
-
+<!--css style file for the home component-->
 <style>
   #btndisclaimer {
     position: fixed;
