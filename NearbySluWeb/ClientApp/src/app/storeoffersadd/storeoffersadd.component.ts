@@ -18,13 +18,13 @@ export class StoreoffersaddComponent implements OnInit {
 
   }
 
-  populateForm(selectedRecord: Storesoffersadd) {
+  populateForm(selectedRecord: Storeoffersadd) {
     this.service.formData = Object.assign({}, selectedRecord);
   }
 
   onDelete(id: number) {
     if (confirm('Are you sure to delete this offer?')) {
-      this.service.deletestoreoffersData(id)
+      this.service.deleteStoreoffersData(id)
         .subscribe(
           res => {
             this.service.refreshList();

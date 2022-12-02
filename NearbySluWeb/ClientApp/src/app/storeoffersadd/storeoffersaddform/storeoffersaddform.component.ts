@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { StoreOffersaddService } from '../../shared/storeoffersadd.service';
+import { StoreoffersaddService } from '../../shared/storeoffersadd.service';
 import { RouterModule } from '@angular/router';
 import { error } from '@angular/compiler/src/util';
 import { Storeoffersadd } from '../../shared/storeoffersadd.model';
@@ -14,6 +14,7 @@ export class StoreoffersaddformComponent implements OnInit {
 
   constructor(public service:StoreoffersaddService) { }
   isNewPlacePosted = false;
+  isStoreOffersPosted = false;
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
@@ -35,7 +36,7 @@ export class StoreoffersaddformComponent implements OnInit {
   }
 
   updateRecord(form: NgForm) {
-    this.service.putStoreOffersData().subscribe(
+    this.service.putStoreoffersData().subscribe(
       res => {
         this.resetForm(form);
         this.service.refreshList();
