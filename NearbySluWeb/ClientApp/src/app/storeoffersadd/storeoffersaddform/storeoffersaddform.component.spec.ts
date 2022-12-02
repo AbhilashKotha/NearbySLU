@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { StoreoffersaddformComponent } from './storeoffersaddform.component';
 
-describe('NewplacaddformComponent', () => {
+describe('StoreoffersaddformComponent', () => {
   let component: StoreoffersaddformComponent;
   let fixture: ComponentFixture<StoreoffersaddformComponent>;
   let de: DebugElement;

@@ -21,10 +21,10 @@
       </thead>
       <tbody>
         <tr *ngFor="let pd of service.list">
-          <td (click)="populateForm(pd)">{{pd.Offer_Name}}</td>
-          <td (click)="populateForm(pd)">{{pd.Offer_Description}}</td>
-          <td (click)="populateForm(pd)">{{pd.Offer_Category}}</td>
-          <td (click)="populateForm(pd)">{{pd.Offer_Valid_upto}}</td>
+          <td (click)="populateForm(pd)">{{pd.offerName}}</td>
+          <td (click)="populateForm(pd)">{{pd.offerdescription}}</td>
+          <td (click)="populateForm(pd)">{{pd.NewOffercategory}}</td>
+          <td (click)="populateForm(pd)">{{pd.OfferValidupto}}</td>
           <td align="center">
             <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.offerId)"></i>
           </td>
