@@ -14238,19 +14238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kotha\\.nuget\\packages\\": {}
+    "C:\\Users\\manit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\tests\\controllertest.tests\\controllertest.csproj",
+      "projectUniqueName": "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\tests\\controllertest.tests\\controllertest.csproj",
       "projectName": "controllertest",
-      "projectPath": "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\tests\\controllertest.tests\\controllertest.csproj",
-      "packagesPath": "C:\\Users\\kotha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\tests\\controllertest.tests\\obj\\",
+      "projectPath": "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\tests\\controllertest.tests\\controllertest.csproj",
+      "packagesPath": "C:\\Users\\manit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\tests\\controllertest.tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kotha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14264,8 +14264,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\NearbySluWeb\\NearbySluWeb.csproj": {
-              "projectPath": "C:\\Users\\kotha\\Documents\\Fall22\\PSD_proj\\NearbySlu\\NearbySLU\\NearbySluWeb\\NearbySluWeb.csproj"
+            "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\NearbySluWeb\\NearbySluWeb.csproj": {
+              "projectPath": "C:\\Users\\manit\\Desktop\\projects\\NearbySLU\\NearbySluWeb\\NearbySluWeb.csproj"
             }
           }
         }
@@ -14337,7 +14337,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },
