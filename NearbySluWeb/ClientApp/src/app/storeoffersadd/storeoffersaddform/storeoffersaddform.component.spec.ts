@@ -2,7 +2,7 @@ import { DebugElement } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { StoreoffersaddformComponent } from './storeoffersaddform.component';
-
+//added test cases
 describe('StoreoffersaddformComponent', () => {
   let component: StoreoffersaddformComponent;
   let fixture: ComponentFixture<StoreoffersaddformComponent>;
@@ -33,7 +33,7 @@ describe('StoreoffersaddformComponent', () => {
     expect(titleText).toEqual('Add a new Offer');
   }));
 
-
+//added test cases for submit button
   it(`should call the onSubmit method`, async(() => {
     spyOn(component, 'onSubmit');
     el = fixture.debugElement.query(By.css('button')).nativeElement;

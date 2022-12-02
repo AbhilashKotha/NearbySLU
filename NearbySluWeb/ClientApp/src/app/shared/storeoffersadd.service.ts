@@ -15,16 +15,16 @@ export class StoreoffersaddService {
   //list: Newplacadd[];
   readonly baseURL = 'https://localhost:7169/api/storeoffersadd'
 
-
+// added post method
   postStoreoffersData() {
     return this.http.post(this.baseURL, this.formData);
 
   }
-
+// add put method
   putStoreoffersData() {
     return this.http.put(`${this.baseURL}/${this.formData.offerId}`, this.formData);
   }
-
+// added delete method
   deleteStoreoffersData(id: number) {
     return this.http.delete(`${this.baseURL}/${id}`);
   }

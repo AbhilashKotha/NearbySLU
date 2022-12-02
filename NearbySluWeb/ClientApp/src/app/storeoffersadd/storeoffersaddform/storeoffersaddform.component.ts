@@ -23,7 +23,7 @@ export class StoreoffersaddformComponent implements OnInit {
     else
       this.updateRecord(form);
   }
-
+// added insert method
   insertRecord(form: NgForm) {
     this.service.postStoreoffersData().subscribe(
       res => {
@@ -34,7 +34,7 @@ export class StoreoffersaddformComponent implements OnInit {
       err => { console.log(err); }
     );
   }
-
+// added update records from the data base
   updateRecord(form: NgForm) {
     this.service.putStoreoffersData().subscribe(
       res => {
@@ -46,7 +46,7 @@ export class StoreoffersaddformComponent implements OnInit {
     );
   }
 
-
+// added reset form to the database
   resetForm(form: NgForm) {
     form.form.reset();
     this.service.formData = new Storeoffersadd();
