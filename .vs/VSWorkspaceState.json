@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NearbySluWeb",
+    "\\NearbySluWeb\\ClientApp",
+    "\\NearbySluWeb\\ClientApp\\src",
+    "\\NearbySluWeb\\ClientApp\\src\\environments"
   ],
-  "SelectedNode": "\\NearbySlu.sln",
+  "SelectedNode": "\\NearbySluWeb\\ClientApp\\src\\environments\\environment.ts",
   "PreviewInSolutionExplorer": false
 }
