@@ -20,6 +20,7 @@ namespace NearbySluWeb.Controllers
         }
 
         // GET: api/addNewPlaces
+        //This is a method to get the details of available places from the database
         [HttpGet]
         public async Task<ActionResult<IEnumerable<addNewPlace>>> GetPlaceDetails()
         {
