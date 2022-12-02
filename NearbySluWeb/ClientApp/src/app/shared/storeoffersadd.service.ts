@@ -15,16 +15,16 @@ export class StoreoffersaddService {
   //list: Newplacadd[];
   readonly baseURL = 'https://localhost:7169/api/storeoffersadd'
 
-
+// added post method
   postStoreoffersData() {
     return this.http.post(this.baseURL, this.formData);
 
   }
-
+// add put method
   putStoreoffersData() {
     return this.http.put(`${this.baseURL}/${this.formData.offerId}`, this.formData);
   }
-
+// added delete method
   deleteStoreoffersData(id: number) {
     return this.http.delete(`${this.baseURL}/${id}`);
   }
@@ -38,32 +38,5 @@ export class StoreoffersaddService {
       .then(res => this.list = res as Storeoffersadd[]);
   }
 
-  //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-  //  http.get<Newplacadd[]>(baseUrl + 'addNewPlaces').subscribe(result => {
-  //   this.places = result;
-  //  }, error => console.error(error));
-
-    
-
-  //  }
-
-
-  //constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string) { }
-
-    //PutaddNewPlace() {
-    //  return this.http.post(this.baseURL, this.formData);
-    //}
-    //putPaymentDetail() {
-    //  return this.http.put(`${this.baseURL}/${this.formData.placeId}`, this.formData);
-    //}
-    //deletePaymentDetail(id: number) {
-    //  return this.http.delete(`${this.baseURL}/${id}`);
-    //}
-  
-
-  //refreshList() {
-  //  this.http.get(this.baseURL)
-  //    .toPromise()
-  //    .then(res => this.list = res as Newplacadd[]);
-  /*}*/
+  // removed unwanted code
 }

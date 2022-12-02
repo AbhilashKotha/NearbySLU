@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { StoreoffersaddComponent } from './storeoffersadd.component';
-
+// test cases for compiling components
 describe('StoreoffersaddComponent', () => {
   let component: StoreoffersaddComponent;
   let fixture: ComponentFixture<StoreoffersaddComponent>;

@@ -14,6 +14,8 @@ import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { NewplacaddComponent } from './newplacadd/newplacadd.component';
 import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddform.component';
+import { StoreoffersaddComponent } from './storeoffersadd/storeoffersadd.component';
+import { StoreoffersaddformComponent } from './storeoffersadd/storeoffersaddform/storeoffersaddform.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddf
     FetchDataComponent,
    /* FormsModule,*/
     NewplacaddComponent,
-    NewplacaddformComponent
+    NewplacaddformComponent,
+    StoreoffersaddComponent,
+    StoreoffersaddformComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -36,7 +40,8 @@ import { NewplacaddformComponent } from './newplacadd/newplacaddform/newplacaddf
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
       //{ path: 'add-new-place', component: NewplacaddComponent, canActivate: [AuthorizeGuard] },
-      { path: 'add-new-place', component: NewplacaddComponent},
+      { path: 'add-new-place', component: NewplacaddComponent },
+      { path: 'StoreOffers', component: StoreoffersaddComponent },
     ])
   ],
   providers: [
