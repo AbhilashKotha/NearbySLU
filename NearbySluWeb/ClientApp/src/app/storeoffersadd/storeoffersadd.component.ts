@@ -21,7 +21,7 @@ export class StoreoffersaddComponent implements OnInit {
   populateForm(selectedRecord: Storeoffersadd) {
     this.service.formData = Object.assign({}, selectedRecord);
   }
-
+// test cases for deleting the fields
   onDelete(id: number) {
     if (confirm('Are you sure to delete this offer?')) {
       this.service.deleteStoreoffersData(id)
