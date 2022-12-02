@@ -1,0 +1,36 @@
+<div class="jumbotron py-3">
+  <h1 class="display-4  ">Add a store Offers</h1>
+</div>
+<div class="row">
+  <div class="col-md-5">
+    <app-storeoffersaddform></app-storeoffersaddform>
+  </div>
+  <div class="col-md-5">
+    <p>
+      Recently added offers
+    </p>
+    <table class=" table">
+      <thead class="thead-light">
+        <tr>
+          <th>Offer_Name</th>
+          <th>Offer_Description</th>
+          <th>Offer_Category</th>
+          <th>Offer_Valid_upto</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pd of service.list">
+          <td (click)="populateForm(pd)">{{pd.Offer_Name}}</td>
+          <td (click)="populateForm(pd)">{{pd.Offer_Description}}</td>
+          <td (click)="populateForm(pd)">{{pd.Offer_Category}}</td>
+          <td (click)="populateForm(pd)">{{pd.Offer_Valid_upto}}</td>
+          <td align="center">
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.offerId)"></i>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
