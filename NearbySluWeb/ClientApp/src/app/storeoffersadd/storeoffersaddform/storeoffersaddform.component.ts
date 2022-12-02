@@ -46,6 +46,8 @@ export class StoreoffersaddformComponent implements OnInit {
     );
   }
 
+  // removed unwanted delete code method
+
 // added reset form to the database
   resetForm(form: NgForm) {
     form.form.reset();

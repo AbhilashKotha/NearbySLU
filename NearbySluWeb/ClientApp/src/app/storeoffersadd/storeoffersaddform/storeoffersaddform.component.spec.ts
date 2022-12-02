@@ -24,9 +24,7 @@ describe('StoreoffersaddformComponent', () => {
     el = de.nativeElement;
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  //removed unwanted test cases
 
   it('should display a title', async(() => {
     const titleText = fixture.nativeElement.querySelector('h1').textContent;
