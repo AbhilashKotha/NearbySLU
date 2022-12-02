@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NearbySluWeb.Models;
+
 namespace NearbySluWeb.Controllers
 {
     [Route("api/[controller]")]
@@ -19,14 +20,14 @@ namespace NearbySluWeb.Controllers
             _context = context;
         }
 
-        // GET: api/addNewPlaces
+        // GET: api/storeOffersAdd
         [HttpGet]
         public async Task<ActionResult<IEnumerable<storeOffersAdd>>> GetOffersDetails()
         {
             return await _context.OffersDetails.ToListAsync();
         }
 
-        // GET: api/addNewPlaces/5
+        // GET: api/storeOffersAdd/5
         [HttpGet("{id}")]
         public async Task<ActionResult<storeOffersAdd>> GetstoreOffersAdd(int id)
         {
@@ -40,7 +41,7 @@ namespace NearbySluWeb.Controllers
             return storeOffersAdd;
         }
 
-        // PUT: api/addNewPlaces/5
+        // PUT: api/storeOffersAdd/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutstoreOffersAdd(int id, storeOffersAdd storeOffersAdd)
@@ -71,7 +72,7 @@ namespace NearbySluWeb.Controllers
             return NoContent();
         }
 
-        // POST: api/addNewPlaces
+        // POST: api/storeOffersAdd
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<storeOffersAdd>> PoststoreOffersAdd(storeOffersAdd storeOffersAdd)
@@ -82,7 +83,7 @@ namespace NearbySluWeb.Controllers
             return CreatedAtAction("GetstoreOffersAdd", new { id = storeOffersAdd.offerId }, storeOffersAdd);
         }
 
-        // DELETE: api/addNewPlaces/5
+        // DELETE: api/storeOffersAdd/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletestoreOffersAdd(int id)
         {

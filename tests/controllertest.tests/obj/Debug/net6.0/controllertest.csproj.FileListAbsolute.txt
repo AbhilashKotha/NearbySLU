@@ -762,3 +762,5 @@ C:\Users\eswar\OneDrive\Desktop\PSD Sprint 3 New\tests\controllertest.tests\obj\
 C:\Users\eswar\OneDrive\Desktop\PSD Sprint 3 New\tests\controllertest.tests\obj\Debug\net6.0\controllertest.pdb
 C:\Users\eswar\OneDrive\Desktop\PSD Sprint 3 New\tests\controllertest.tests\obj\Debug\net6.0\controllertest.genruntimeconfig.cache
 C:\Users\eswar\OneDrive\Desktop\PSD Sprint 3 New\tests\controllertest.tests\obj\Debug\net6.0\ref\controllertest.dll
+C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\ClientApp\src\app\shared\package-lock.json
+C:\Users\kotha\Documents\Fall22\PSD_proj\NearbySlu\NearbySLU\tests\controllertest.tests\bin\Debug\net6.0\ClientApp\src\app\shared\package.json

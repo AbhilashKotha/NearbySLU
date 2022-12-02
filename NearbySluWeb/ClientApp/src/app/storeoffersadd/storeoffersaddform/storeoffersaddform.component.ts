@@ -14,7 +14,7 @@ export class StoreoffersaddformComponent implements OnInit {
 
   constructor(public service:StoreoffersaddService) { }
   isNewPlacePosted = false;
-  isStoreOffersPosted = false;
+  isNewOfferPosted = false;
   ngOnInit(): void {
   }
   onSubmit(form: NgForm) {
@@ -29,7 +29,7 @@ export class StoreoffersaddformComponent implements OnInit {
       res => {
         this.resetForm(form);
         this.service.refreshList();
-        setTimeout(() => { this.isStoreOffersPosted = false; }, 1000);
+        setTimeout(() => { this.isNewOfferPosted = false; }, 1000);
       },
       err => { console.log(err); }
     );
@@ -40,7 +40,7 @@ export class StoreoffersaddformComponent implements OnInit {
       res => {
         this.resetForm(form);
         this.service.refreshList();
-        setTimeout(() => { this.isStoreOffersPosted = false; }, 1000);
+        setTimeout(() => { this.isNewOfferPosted = false; }, 1000);
       },
       err => { console.log(err); }
     );

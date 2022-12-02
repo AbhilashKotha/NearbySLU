@@ -13,7 +13,7 @@ export class StoreoffersaddService {
   formData: Storeoffersadd = new Storeoffersadd();
   list: Storeoffersadd[] = [];
   //list: Newplacadd[];
-  readonly baseURL = 'https://localhost:7169/api/storeoffersadd'
+  readonly baseURL = 'https://localhost:7169/api/storeOffersAdd'
 
 
   postStoreoffersData() {
