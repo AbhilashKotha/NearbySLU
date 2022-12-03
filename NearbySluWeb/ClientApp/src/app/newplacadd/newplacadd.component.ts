@@ -18,6 +18,9 @@ export class NewplacaddComponent implements OnInit {
 
   }
 
+
+
+
   populateForm(selectedRecord: Newplacadd) {
     this.service.formData = Object.assign({}, selectedRecord);
   }

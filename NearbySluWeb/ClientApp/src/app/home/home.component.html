@@ -5,132 +5,112 @@
   <p> We provide you will all the information to make your life easier in finding the nearby places, tourist destinations, government offices and what not.</p>
 </div>
 <div>
-  <p>
-    <br />
-  </p>
 </div>
 <div>
-  <div class="catog">
+  <div id="shopping" class="catog" (click)="onCatClick('Shopping')" title="Click here to know about the nearest shopping malls">
     <div id="content">
       <img src="../../assets/3081415.png" class="ribbon" alt="" />
     </div>
     <b>SHOPPING</b>
-    <div id="desc">
-      Click here to know about the nearest shopping malls
-    </div>
   </div>
-  <div style="border: none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="grocery" class="catog" (click)="onCatClick('grocery')" title="Click here to know about the nearby Grocery stores">
 
     <div id="content">
       <img src="../../assets/2255126.png" class="ribbon" alt="" />
     </div>
     <b>GROCERIES</b>
-    <div id="desc">
-      Click here to know about the nearby Grocery stores
-    </div>
+
   </div>
-  <div style="border: none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="OFFICES" class="catog" (click)="onCatClick('OFFICES')" title="Click here to know about nearby government offices">
 
     <div id="content">
       <img src="../../assets/1582292.png" class="ribbon" alt="" />
     </div>
     <b>OFFICES</b>
-    <div id="desc">
-      Click here to know about nearby government offices
-    </div>
   </div>
-  <p></p>
-  <div class="catog">
+  <div id="SCHOOLS" class="catog" (click)="onCatClick('SCHOOLS')" title="Click here to know about the nearby schools">
 
     <div id="content">
       <img src="../../assets/3197831.png" class="ribbon" alt="" />
     </div>
     <b>SCHOOLS</b>
-    <div id="desc">
-      Click here to know about the nearby schools
-    </div>
   </div>
-  <div style="border:none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="TRANSPORT" class="catog" (click)="onCatClick('TRANSPORT')" title="Click here to know about nearby transport options">
     <div id="content">
       <img src="../../assets/149228.png" class="ribbon" alt="" />
     </div>
     <b>TRANSPORT</b>
-    <div id="desc">
-      Click here to know about nearby transport options
-    </div>
+
   </div>
-  <div style="border:none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="ATTRACTIONS" class="catog" (click)="onCatClick('ATTRACTIONS')" title="Click here to know about nearby tourist attractions
+">
     <div id="content">
       <img src="../../assets/565656.png" class="ribbon" alt="" />
     </div>
     <b>ATTRACTIONS</b>
-    <div id="desc">
-      Click here to know about nearby tourist attractions
-    </div>
   </div>
-  <p></p>
-  <div class="catog">
+  <div id="HOSPITALS" class="catog" (click)="onCatClick('HOSPITALS')" title="Click here to know about nearby hospital facilities.">
     <div id="content">
       <img src="../../assets/2895071.png" class="ribbon" alt="" />
     </div>
     <b>HOSPITALS</b>
-    <div id="desc">
-      Click here to know about nearby hospital facilities.
-    </div>
   </div>
-  <div style="border:none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="RESTAURANTS" class="catog" (click)="onCatClick('RESTAURANTS')" title="Click here to know about the nearby restaurants">
     <div id="content">
       <img src="../../assets/562678.png" class="ribbon" alt="" />
     </div>
     <b>RESTAURANTS</b>
-    <div id="desc">
-      Click here to know about the nearby restaurants
-    </div>
   </div>
-  <div style="border:none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="BANKS" class="catog" (click)="onCatClick('BANKS')" title="Click here to know about the nearby banks">
     <div id="content">
       <img src="../../assets/1669617.png" class="ribbon" alt="" />
     </div>
     <b>BANKS</b>
-    <div id="desc">
-      Click here to know about the nearby banks
-    </div>
   </div>
-  <p></p> 
-  <div class="catog">
+  <div id="EVENTS" class="catog" (click)="onCatClick('EVENTS')" title="Click here to know about the events conducted in the school">
     <div id="content">
       <img src="../../assets/3270055.png" class="ribbon" alt="" />
     </div>
     <b>EVENTS</b>
-    <div id="desc">
-      Click here to know about the events conducted in the school
-    </div>
   </div>
-  <div style="border:none; width: 5%; display: inline-block; ">
-  </div>
-  <div class="catog">
+  <div id="COMPANIES" class="catog" (click)="onCatClick('COMPANIES')" title="Click here to know about the nearby companies providing work opportunities.">
     <div id="content">
       <img src="../../assets/4300058.png" class="ribbon" alt="" />
     </div>
     <b>COMPANIES</b>
-    <div id="desc">
-      Click here to know about the nearby companies providing work opportunities.
-    </div>
+  </div>
+  <div id="removeFilters" style="border-color:brown" class="catog" (click)="removeFilters()" *ngIf="show" title="Click here to remove filters">
+
+    <b style="color:brown">Remove Filters</b>
+
   </div>
 </div>
 
+<div style="padding-top:20px">
+  <h2>Places near your university</h2>
+</div>
+
+<div>
+  <table id="myTable" class=" table">
+    <thead class="thead-light">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Distance in Miles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pd of service.list">
+        <td>{{pd.placeName}}</td>
+        <td>{{pd.description}}</td>
+        <td>{{pd.category}}</td>
+        <td>{{pd.distance}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
 
 <!--<div class="form-group" style="margin-top: 12%; float:right; position: relative; ">
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -144,25 +124,31 @@
     right: 20px;
     bottom: 20px;
   }
+
   .catog {
+    cursor: pointer;
     border: solid;
-    width: 30%;
+    width: 15%;
     display: inline-block;
     border-radius: 10px;
     padding-left: 10px;
     padding-top: 10px;
-    padding-bottom: 5px
+    padding-bottom: 5px;
+    margin: 5px;
   }
+
   #content {
     position: relative;
   }
+
     #content img {
       padding-right: 10px;
       position: absolute;
       top: 0px;
       right: 0px;
-      width: 18%;
+      width: 20%;
     }
+
   #desc {
     border: none;
     width: 80%;
